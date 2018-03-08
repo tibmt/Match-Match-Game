@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "BenKrush";
+    src: url(fonts/ben-krush.ttf);
+}
+* {
+    font-family: 'BenKrush';
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+header button{
+    background-color: #2aae63;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.timer{
+    background-color: #2aae63;
+    padding: 7px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.newGame{
+    position: relative;
+    left: 70%;
+}
+
+section{
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+section div{
+    position: relative;
+    top: 100px;
+    font-size: 17px;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 30px;
+}
+
+.startGame{
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2aae63;
+}
+
+aside{
+    width: 200px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 5px;
+    position: relative;
+    bottom: 250px;
+    background-color: #2aae63;
+    color: black;
+    visibility: hidden;
+}
+
+aside .diffAside{
+    font-size: 20px;
+    margin: 2px 20%;
+    background-color: red;
+}
+
+aside .skirtAside{
+    padding: 0;
+    margin: 2px 20%;
+}
+
+
+/*this is classes for fliping cards*/
+
+.flip-container {
+    perspective: 1000;
+}
+
+.flip-container, .front, .back {
+    margin: 2%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip-container .flip {
+    transform: rotateY(180deg);
+}
+
+
